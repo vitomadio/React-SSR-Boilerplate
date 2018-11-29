@@ -6,7 +6,7 @@ const Header = ( { loggedIn } ) => (
     <div>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/auth">Auth</Link>
         { loggedIn && <Link to="/secret">Secret</Link> }
     </div>
 );

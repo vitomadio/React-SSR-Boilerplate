@@ -8,7 +8,8 @@ import { Provider as ReduxProvider } from "react-redux";
 import Helmet from "react-helmet";
 import routes from "./routes";
 import Layout from "./components/Layout";
-import createStore, { initializeSession } from "./store";
+import { initializeSession } from "./store/actions/index";
+import createStore from "./store/store";
 
 const app = express();
 
@@ -44,7 +45,7 @@ app.get( "/*", ( req, res ) => {
     } );
 } );
 
-app.listen( 2048 );
+app.listen( 3000 );
 
 function htmlTemplate( reactDom, reduxState, helmetData ) {
     return `
@@ -62,7 +63,6 @@ function htmlTemplate( reactDom, reduxState, helmetData ) {
             <script>
                 window.REDUX_DATA = ${ JSON.stringify( reduxState ) }
             </script>
-            <script src="./app.bundle.js"></script>
         </body>
         </html>
     `;

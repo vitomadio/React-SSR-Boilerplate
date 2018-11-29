@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { fetchData } from "../store";
+import { fetchData } from "../store/actions/initialActions";
 
 class Home extends React.Component {
     componentDidMount( ) {
@@ -20,6 +20,16 @@ class Home extends React.Component {
                         <li key={ circuitId } >{ circuitName } - { Location.locality }, { Location.country }</li>
                     ) ) }
                 </ul>
+                <div className="dropdown">
+                  <div className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                  </div>
+                  <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a className="dropdown-item" href="#">Action</a>
+                    <a className="dropdown-item" href="#">Another action</a>
+                    <a className="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
             </div>
         );
     }

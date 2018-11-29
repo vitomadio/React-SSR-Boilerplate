@@ -1,7 +1,6 @@
-import Home from "./components/Home";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Secret from "./components/Secret";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Auth from "./pages/Auth";
 
 export default [
     {
@@ -15,13 +14,8 @@ export default [
         exact: true,
     },
     {
-        path: "/contact",
-        component: Contact,
-        exact: true,
-    },
-    {
-        path: "/secret",
-        component: Secret,
+        path: "/auth",
+        component: Auth,
         exact: true,
     },
 ];
