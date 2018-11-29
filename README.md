@@ -15,6 +15,7 @@ Now open the browser and navigate to `http://localhost:3000` and you get your se
 
 ## Take into consideration:
 -Locate all pages inside pages folder.
+
 -This boilerplate comes with react-helmet and has a Layout component set to share header or any other component through out all pages.
 
 
