@@ -234,7 +234,6 @@ class Dashboard extends Component {
     const currentPrices = this.props.currentPrices;
     const historyData = this.props.historyPrices;
     const pairs = this.state.pairs || this.props.pairs;
-    console.log(pairs)
     let currencyPairs = pairs.map((item, i) => {
       return (
         <div className="col-12 col-md-4 p-2"

@@ -46,7 +46,7 @@ export const changeListOrder = (old_idx, new_idx) => {
     return dispatch => {
         axios.post('/currency-pairs/update', { old_idx: old_idx, new_idx: new_idx })
             .then(({ data }) => {
-                console.log(data);
+                dispatch(setCurrencyPairs(data))
             })
             .catch(err => console.log(err))
     }

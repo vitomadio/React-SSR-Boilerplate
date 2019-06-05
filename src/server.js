@@ -13,7 +13,6 @@ import { Provider as ReduxProvider } from "react-redux";
 import Helmet from "react-helmet";
 import routes from "./routes";
 import Layout from "./components/Layout";
-import { initializeSession } from "./store/actions/index";
 import createStore from "./store/store";
 
 const auth = require('./routes/auth');
@@ -43,7 +42,6 @@ app.get('/*', (req, res) => {
     const context = {};
     const store = createStore();
 
-    store.dispatch(initializeSession());
 
     const dataRequirements =
         routes

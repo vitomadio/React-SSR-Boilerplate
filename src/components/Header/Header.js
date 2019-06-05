@@ -44,7 +44,6 @@ class Header extends React.Component {
 
     const windowWidth = window.innerWidth;
     const dropdownToggle = window.document.getElementById('dropdown-toggle').getBoundingClientRect();
-    console.log(dropdownToggle.left);
     if (windowWidth >= 1250) {
       const overFlow = (dropdownToggle.left + 1250) - windowWidth;
       this.setState({
@@ -110,7 +109,6 @@ class Header extends React.Component {
     }
     //Sets dropdown menu width depending on window width.
     const dropdownToggle = window.document.getElementById('dropdown-toggle').getBoundingClientRect();
-    console.log(dropdownToggle.left);
     if (windowWidth >= 1250) {
       const overFlow = (dropdownToggle.left + 1250) - windowWidth;
       this.setState({

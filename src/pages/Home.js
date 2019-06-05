@@ -26,9 +26,9 @@ class Home extends React.Component {
   componentDidMount() {
     //Gets currency pairs list.
     this.props.onGetCurrencyPairs();
-    // //Gets current prices.
+    //Gets current prices.
     this.getAllcurrentPrices();
-    // //Gets all historic pices.
+    //Gets all historic pices.
     this.getAllHistoryPrices();
     //Adding onscroll event to window.
     window.addEventListener('scroll', this.handleScroll);

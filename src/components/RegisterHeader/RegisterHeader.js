@@ -29,7 +29,6 @@ class RegisterHeader extends React.Component {
   }
 
   render() {
-
     return (
       <Navbar expand="md" className="bg-transparent px-0" dark={true} style={{ height: 62 }}>
         <div className="container" style={{ maxWidth: 1600 }}>

@@ -33,7 +33,6 @@ router.get('/rates', (req, res) => {
     //Call Promise.
     getRates
         .then(data => {
-            console.log(data)
             if (Array.isArray(data) === false) {
                 return res.send(data);
             }

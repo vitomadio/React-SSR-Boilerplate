@@ -1,7 +1,4 @@
-export {
-	initializeSession,
-	fetchData
-} from './initialActions';
+
 //Authentication actions.
 export {
 	createAccount,

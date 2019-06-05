@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "build": "NODE_ENV=production webpack --progress",
-    "dev": "concurrently \"npm run gulp-dev\" \"nodemon server\" \"npm run client\" ",
+    "dev": "concurrently \"npm run gulp-dev\" \"npm run server\" \"npm run client\" ",
     "server": "nodemon index.js",
     "client": "webpack --watch --progress",
     "gulp-dev": "gulp default",
@@ -87,16 +87,13 @@
     "webpack-node-externals": "^1.7.2"
   },
   "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "Firefox ESR"
+    "> 1%", "last 2 versions", "Firefox ESR"
   ],
   "bundlesize": [
     {
       "path": "./dist/js/app.bundle.js",
       "maxSize": "170 kB"
-    },
-    {
+    }, {
       "path": "./dist/js/lib.bundle.js",
       "maxSize": "110 kB"
     }
