@@ -1,0 +1,19 @@
+button.navbar-toggler {
+    border-color: transparent !important;
+}
+
+@media (max-width: 767px) {
+    .logout-btn {
+        border-color: transparent !important;
+        text-align: center;
+    }
+    .hello-btn {
+        text-align: center;
+    }
+    .nav-item:hover {
+        background: #3252A0;
+    }
+    .navbar-brand {
+        margin-left: 2em;
+    }
+}

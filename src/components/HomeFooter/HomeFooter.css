@@ -1,0 +1,9 @@
+@media (max-width: 576px) {
+    .footer-copyrights {
+        font-size: 12px;
+        margin-left: 1em;
+    }
+    .footer-socials {
+        max-width: 100px;
+    }
+}

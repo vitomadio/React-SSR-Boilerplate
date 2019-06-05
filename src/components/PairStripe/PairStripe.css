@@ -1,0 +1,46 @@
+.pairStripe {
+    background: white;
+    padding: 1em 1.5em;
+    cursor: all-scroll;
+    box-shadow: 0px 0px 5px rgb(191, 191, 191) !important;
+}
+
+.pairStripe:hover {
+    -ms-transform: scale(1.02, 1.02);
+    /* IE 9 */
+    -webkit-transform: scale(1.02, 1.02);
+    /* Safari 3-8 */
+    transform: scale(1.02, 1.02);
+    box-shadow: 0px 0px 15px rgb(191, 191, 191) !important;
+}
+
+.pairstripe-title {
+    color: #000;
+    margin-right: .35em;
+    font-size: 16px;
+}
+
+.pairstripe-short {
+    color: #aaa;
+    font-size: 16px;
+}
+
+.box-price {
+    font-size: 16px;
+}
+
+@media (max-width: 767px) {
+    .pairstripe-title {
+        margin-right: .15em;
+        font-size: 14px;
+    }
+    .pairstripe-short {
+        font-size: 14px;
+    }
+    .pairStripe {
+        padding: 1em .5em;
+    }
+    .box-price {
+        font-size: 14px;
+    }
+}

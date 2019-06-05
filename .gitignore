@@ -57,4 +57,13 @@ typings/
 # dotenv environment variables file
 .env
 
+#dist folder
 dist
+
+#assets folder
+assets
+
+#Dockers files
+Dockerfile
+docker-compose.yml
+.dockerignore

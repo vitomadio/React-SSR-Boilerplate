@@ -1,28 +1,23 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Header from "./Header";
-import Head from "./Head";
 import routes from "../routes";
-
+import Head from "./Head";
 
 class Layout extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
-            title: "Welcome to React SSR!",
+
         };
     }
 
     render() {
         return (
-            <div>
-                <h1>{ this.state.title }</h1>
+            <div style={{ height: '100%' }}>
                 <Head />
-                <Header />
                 <Switch>
-                    { routes.map( route => <Route key={ route.path } { ...route } /> ) }
+                    {routes.map(route => <Route key={route.path} path={route.path} exact={route.exact} render={props => <route.component props={props} />} />)}
                 </Switch>
-                
             </div>
         );
     }

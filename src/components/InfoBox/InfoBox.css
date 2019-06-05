@@ -1,0 +1,36 @@
+/* InfoBox component styles. */
+
+/* #data-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+
+.box {
+    padding: 10px;
+}
+
+.heading {
+    font-size: 2em;
+}
+
+.subtext {
+    color: #aaa;
+}
+
+#middle {
+    border-bottom: 1px dashed #DAE1E9;
+}
+
+@media (min-width: 1200px) {
+    .heading {
+        font-size: 2em;
+        color: #bbb;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        padding: 5px;
+    }
+}

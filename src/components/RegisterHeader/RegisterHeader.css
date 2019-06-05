@@ -1,0 +1,26 @@
+button.navbar-toggler {
+    border-color: transparent !important;
+    color: #fff;
+}
+
+.navbar-brand.register {
+    margin-left: 2em;
+}
+
+.navbar-toggler-icon {}
+
+@media (max-width: 767px) {
+    .logout-btn {
+        border-color: transparent !important;
+        text-align: center;
+    }
+    .hello-btn {
+        text-align: center;
+    }
+    .nav-item.register:hover {
+        background: rgba(255, 255, 255, 0.3);
+    }
+    button.navbar-toggler {
+        margin-right: 1em;
+    }
+}
